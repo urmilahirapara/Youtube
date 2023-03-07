@@ -4,10 +4,8 @@ import { useSearchParams } from "react-router-dom";
 import { closeMenu } from "../utils/appSlice";
 import CommentsContainer from "./CommentsContainer";
 import LiveChat from "./LiveChat";
-
 const WatchPage = () => {
   const [searchParams] = useSearchParams();
-
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(closeMenu());
